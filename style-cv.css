@@ -1,0 +1,121 @@
+html {
+    font-family: "Berkshire Swash";
+    line-height: 125%;
+    background-color: aliceblue;
+}
+
+body {
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 44rem;
+    background-color: blanchedalmond;
+    box-shadow: 0 0 10px;
+}
+
+header {
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-top: 6px double currentColor;
+    border-bottom: 3px solid currentColor;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: indianred;
+    font-family: "Berkshire Swash", cursive;
+    letter-spacing: 0.35rem;
+    font-weight:lighter;
+    text-align: center;
+}
+
+header span {
+    color: #777;
+    float: center;
+}
+
+h2 {
+    color: #333;
+  font-family: "Berkshire Swash", cursive;
+    margin: 0 0 2rem;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+dl {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: .5rem 1rem;
+    align-items: baseline;
+    font-size: 0.875rem;
+} 
+
+dt {
+    grid-column: 1 / span 3 ;
+    font-weight: bold;
+}
+
+dt::after {
+    content: ' :';
+}
+
+dd {
+    grid-column: 4 / span 9;
+    color: #777;
+}
+
+ul li {
+    list-style: none;   
+}
+
+ul li a{
+    text-decoration: none;
+    display: inline-block; 
+    float: left;
+    padding: 0 .5rem; 
+}
+
+.entree {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: repeat(3, auto);
+    align-items: baseline;
+    gap: .25rem .5rem;
+    margin-bottom: 1rem;
+}
+
+.entree .nom {
+    grid-column: 3 /span 10;
+    grid-row: 1;
+    margin:0;
+}
+/*voici un commentaire*/
+.entree .periode {
+    grid-column: 1 /span 2;
+    grid-row: 1;
+    font-weight: bold;
+}
+
+.entree .diplome {
+    grid-column: 3 /span 10;
+    grid-row: 2;
+    font-style: italic;
+    color: #777;
+}
+
+.entree .description1 {
+    grid-column: 3 /span 10;
+    grid-row: 2;
+    color: #777;
+}
+
+.entree .description {
+    grid-column: 3 /span 10;
+    grid-row: 3;
+}
+
+footer {
+    padding: 1.5rem 0;
+    margin-top: 3rem;
+    border-top: 6px double currentColor;
+}
